@@ -13,6 +13,7 @@
     border: none;
     outline: none;
     border-radius: 3px;
+    transition: .3s color linear, .3s border-color linear, .3s background-color linear;
     cursor: pointer;
     &_transparent  {
         background-color: transparent;
@@ -27,5 +28,45 @@
         height: 80px;
         color: $secondary-black-color;
         font-size: 18px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .btn {
+        width: 236px;
+        height: 60px;
+        &_menu {
+            max-width: 165px;
+            height: 60px;
+        }
+        &_main {
+            max-width: 290px;
+            height: 66px;
+            font-size: 16px;
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    .btn {
+        width: 217px;
+        height: 56px;
+        &_menu {
+            height: 56px;
+        }
+        &_main {
+            max-width: 248px;
+            height: 60px;
+            font-size: 14px;
+        }
+        &_calculate {
+            width: 135px;
+            height: 48px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .btn {
+        &_menu {
+            display: none;
+        }
     }
 }
