@@ -1,12 +1,20 @@
 const swiper = new Swiper('.reviews-slider', {
-    slidesPerView: 3,
+    
     direction: 'horizontal',
     loop: true,
-    spaceBetween: 30,
   
     pagination: {
       el: '.swiper-pagination',
     },
+    breakpoints: {
+        769: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        320: {
+          slidesPerView: 1
+    },
+}
 });
 
 if (window.innerWidth <= 768) {

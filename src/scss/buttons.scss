@@ -68,5 +68,20 @@
         &_menu {
             display: none;
         }
+        &_calculate {
+            margin-left: auto;
+            width: 220px;
+            height: 48px;
+        }
+    }
+}
+@media screen and (max-width: 545px) {
+    .btn {
+        max-width: 290px;
+        width: 100%;
+        &_main {
+            max-width: 290px;
+            width: 100%;
+        }
     }
 }
