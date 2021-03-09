@@ -79,6 +79,9 @@
                     </svg>
                 </a>
                 <nav class="header__nav">
+                    <span class="close-mobile"></span>
+                    <a href="tel:88001234567" class="header__phone-mobile">8 (800) 123-45-67</a>
+                    <button class="btn btn_mobile">Войти</button>
                     <ul class="menu">
                         <li><a href="#">О портале</a></li>
                         <li><a href="#">Типы бурения</a></li>
@@ -98,6 +101,7 @@
     <main>
         <section class="intro">
             <video class="intro__video" src="/images/Bubbles.mp4" autoplay loop muted></video>
+            <a href="#about" class="intro__anchor"></a>
             <div class="container">
                 <div class="intro__wrap">
                     <p class="intro__subtitle">Портал</p>
@@ -209,7 +213,7 @@
                                 <input type="email" class="input callback__item" placeholder="E-mail">
                             </div>
                             <textarea name="Комментарий" class="callback__textarea" id="comments" placeholder="Комментарий"></textarea>
-                            <button class="btn show-map">Показать карту</button>
+                            <a class="btn show-map">Показать карту</a>
                             <div class="callback__submit-wrap">
                                 <label for="checkmark" class="callback__checkbox">
                                     <input type="checkbox" id="checkmark">
@@ -397,6 +401,7 @@
                 <div class="footer__main-block">
                     <a href="#" class="footer__logo">
                         <img src="images/svg/logo.svg" alt="logo">
+                        <p class="footer__copyright">Intellect Drilling © 2019. Все права защищены</p>
                     </a>
                     <ul class="footer__links">
                         <li class="footer__link">
@@ -422,6 +427,7 @@
                     </div>
                 </div>
             </div>
+            <p class="footer__copyright-mobile">Intellect Drilling © 2019. Все права защищены</p>
         </div>
     </footer>
     <script src="js/swiper-bundle.js"></script>

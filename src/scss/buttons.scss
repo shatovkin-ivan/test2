@@ -73,6 +73,14 @@
             width: 220px;
             height: 48px;
         }
+        &_mobile {
+            width: 220px;
+            height: 56px;
+            margin: 140px auto 0 auto;
+            color: $blue-color;
+            background-color: transparent;
+            border: 2px solid $blue-color;
+        }
     }
 }
 @media screen and (max-width: 545px) {
@@ -83,5 +91,13 @@
             max-width: 290px;
             width: 100%;
         }
+        &_mobile {
+            margin-top: 0;
+        }
+    }
+}
+@media screen and (min-width: 769px) {
+    .btn_mobile {
+        display: none;
     }
 }
