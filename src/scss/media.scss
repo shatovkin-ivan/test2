@@ -817,6 +817,12 @@
             margin-top: 0;
         }
     }
+    .input-wrap_item {
+        width: 100%;
+    }
+    .input-wrap_item:not(:last-child) {
+        margin-right: 0;
+    }
     .callback__submit-wrap .btn_transparent {
         margin-right: 0;
         margin-bottom: 20px;
