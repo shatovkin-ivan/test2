@@ -42,10 +42,10 @@ window.addEventListener('DOMContentLoaded', () => {
         
     showMapBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        input.forEach(inputItem => {
-            console.log(inputItem.value);
-            if (inputItem.value != '') {
+        for(let i = 0; i < input.length; i++) {
+            if (input[i].value !== '') {
                 callback.classList.toggle('active');
+                input[i].classList.remove('error');
                 if (callback.classList.contains('active')) {
                     showMapBtn.innerHTML = "Скрыть карту";
                 }
@@ -54,10 +54,10 @@ window.addEventListener('DOMContentLoaded', () => {
                 }
             }
             else {
-                inputItem.classList.add('error');
+                input[i].classList.add('error');
+                callback.classList.remove('active');
             }
-        })
-        
+        }
     })
 
     let menu = document.querySelector('.menu-mobile'),
