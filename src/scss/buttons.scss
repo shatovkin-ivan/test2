@@ -32,7 +32,7 @@
 }
 @media screen and (max-width: 1280px) {
     .btn {
-        width: 236px;
+        max-width: 236px;
         height: 60px;
         &_menu {
             max-width: 165px;
@@ -47,7 +47,7 @@
 }
 @media screen and (max-width: 1000px) {
     .btn {
-        width: 217px;
+        max-width: 217px;
         height: 56px;
         &_menu {
             height: 56px;
@@ -58,7 +58,7 @@
             font-size: 14px;
         }
         &_calculate {
-            width: 135px;
+            max-width: 135px;
             height: 48px;
         }
     }
@@ -68,13 +68,16 @@
         &_menu {
             display: none;
         }
+        &_main {
+            max-width: 248px;
+        }
         &_calculate {
             margin-left: auto;
-            width: 220px;
+            max-width: 220px;
             height: 48px;
         }
         &_mobile {
-            width: 220px;
+            max-width: 220px;
             height: 56px;
             margin: 140px auto 0 auto;
             color: $blue-color;
@@ -86,7 +89,6 @@
 @media screen and (max-width: 545px) {
     .btn {
         max-width: 290px;
-        width: 100%;
         &_main {
             max-width: 290px;
             width: 100%;
@@ -99,5 +101,12 @@
 @media screen and (min-width: 769px) {
     .btn_mobile {
         display: none;
+    }
+}
+@media screen and (max-height: 568px) {
+    .btn {
+        &_main {
+            min-height: 60px;
+        }
     }
 }

@@ -2,6 +2,7 @@ const swiper = new Swiper('.reviews-slider', {
     
     direction: 'horizontal',
     loop: true,
+    paginationClickable: true,
   
     pagination: {
       el: '.swiper-pagination',
@@ -12,7 +13,7 @@ const swiper = new Swiper('.reviews-slider', {
             spaceBetween: 30,
         },
         320: {
-          slidesPerView: 1
+          slidesPerView: 1,
     },
 }
 });
@@ -25,7 +26,10 @@ if (window.innerWidth <= 768) {
         observeParents: true,
         observeSlideChildren: true,
         observer: true,
-
+        navigation: {
+            nextEl: '#about .swiper-button-next',
+            prevEl: '#about .swiper-button-prev',
+        }
     });
 }
 window.addEventListener('DOMContentLoaded', () => {
